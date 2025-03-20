@@ -42,3 +42,11 @@ async function getTickets() {
 }
 
 getTickets();
+
+function redirectToCreateTicket() {
+    window.location.href='/Tickets/views/create-ticket.php';
+}
+
+const createTicketButton = document.getElementById('createTicketButton');
+
+createTicketButton.addEventListener('click', redirectToCreateTicket);

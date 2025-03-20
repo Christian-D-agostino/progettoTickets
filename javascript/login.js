@@ -26,11 +26,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             // ✅ Reindirizzamento in base al ruolo
             setTimeout(() => {
                 if (data.role === "superadmin") {
-                    window.location.href = "homepage.php";
+                    window.location.href = "/Tickets/views/homepage.html";
                 } else if (data.role === "admin") {
-                    window.location.href = "homepage.php";
+                    window.location.href = "homepage.html";
                 } else {
-                    window.location.href = "homepage.php";
+                    window.location.href = "homepage.html";
                 }
             }, 3000);
         } else {
